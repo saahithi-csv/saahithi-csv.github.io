@@ -3,56 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Saahithi Budharaju</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fce4ec;
         }
-        h1 {
-            color: #2c3e50;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .section {
-            margin-bottom: 30px;
+        .logo {
+            display: flex;
+            align-items: center;
         }
-        a {
-            color: #3498db;
+        .logo-circle {
+            width: 30px;
+            height: 30px;
+            background-color: #c8e6c9;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .blog-link {
             text-decoration: none;
+            color: black;
         }
-        a:hover {
-            text-decoration: underline;
+        main {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 10px solid white;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .language-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Brief introduction about yourself</p>
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <h3>SAAHITHI BUDHARAJU</h3>
+        </div>
+        <a href="#" class="blog-link">→ BLOG</a>
     </header>
-    
-    <section class="section">
-        <h2>About Me</h2>
-        <p>More detailed information about your background, skills, and interests.</p>
-    </section>
-    
-    <section class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-    </section>
-    
-    <section class="section">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
-        <p>GitHub: <a href="#">Your GitHub Profile</a></p>
-    </section>
+    <main>
+        <div class="profile-info">
+            <h1>Saahithi<br>Budharaju</h1>
+            <p>(yes, it's a mouthful)</p>
+            <p>I'm a data nerd who likes to dabble. Here's what I'm dabbling in now: </p>
+            <div class="social-icons">
+                <a href="#">🎧</a>
+                <a href="#">in</a>
+                <a href="#">@</a>
+            </div>
+        </div>
+        <img src="" alt="Saahithi Budharaju" class="profile-image">
+    </main>
+    <div class="language-toggle">
+        <button>EN</button>
+    </div>
 </body>
 </html>
