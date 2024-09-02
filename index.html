@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             background-color: #fce4ec;
@@ -16,6 +16,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 50px;
         }
         .logo {
             display: flex;
@@ -35,17 +36,34 @@
         main {
             display: flex;
             align-items: center;
-            margin-top: 50px;
+            justify-content: space-between;
         }
-        .profile-info {
+        .name-section {
             flex: 1;
         }
-        .profile-image {
+        .image-section {
+            position: relative;
             width: 300px;
             height: 300px;
+        }
+        .image-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            border-radius: 50%;
+            transform: translateX(-10%) translateY(10%);
+        }
+        .profile-image {
+            position: relative;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 10px solid white;
+        }
+        .description-section {
+            flex: 1;
+            padding-left: 40px;
         }
         .social-icons a {
             margin-right: 10px;
@@ -63,15 +81,20 @@
     <header>
         <div class="logo">
             <div class="logo-circle"></div>
-            <h3>SAAHITHI BUDHARAJU</h3>
+            <h3>Saahithi Budharaju</h3>
         </div>
         <a href="#" class="blog-link">→ BLOG</a>
     </header>
     <main>
-        <div class="profile-info">
+        <div class="name-section">
             <h1>Saahithi<br>Budharaju</h1>
             <p>(yes, it's a mouthful)</p>
-            <p>I'm a data nerd who likes to dabble. Here's what I'm dabbling in now: </p>
+        </div>
+        <div class="image-section">
+            <div class="image-background"></div>
+        </div>
+        <div class="description-section">
+            <p>I'm a data nerd who likes to dabble in things..</p>
             <div class="social-icons">
                 <a href="#">🎧</a>
                 <a href="#">in</a>
@@ -79,8 +102,5 @@
             </div>
         </div>
     </main>
-    <div class="language-toggle">
-        <button>EN</button>
-    </div>
 </body>
 </html>
